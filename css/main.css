@@ -1,0 +1,616 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ============================================================== */
+html, body {
+    width:100%;
+    height:100%;
+}
+
+body {
+    font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
+    background-color: #128977;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* ========================== General ========================== */
+
+.info {
+    display: none;
+}
+#fixedElement {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    margin-left: -100px;
+    background-color: rgba(34,34,34,0.4);
+    color: rgba(255,255,255,0.7);
+    padding: 5px;
+    z-index: 3;
+    font-size: 12px;
+}
+
+/* ========================== Header =========================== */
+
+header {
+    background: #222222 url('../img/KTlogo2.jpg') no-repeat top center;
+    background-size: auto 130px;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0 20px 0;
+    position: relative;
+    z-index: 2;
+}
+    header h1 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+    header p {
+        color: #f3cc11;
+        line-height: 1.2em;
+    }
+
+/* ========================== Intro =========================== */
+main { }
+
+  #intro {
+    /*background: url('../img/bcg_profiles.png') repeat-y top center;*/
+    /*background-attachment: fixed;*/
+    color: #fff;
+    background-size: auto 45px;
+    z-index: 2;
+  }
+
+  .intro-section{
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bee {
+    margin-left: 0;
+  }
+
+  .intro-section h2 {
+        margin-top: 0;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .intro-section p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+  .bee { 
+    float: left; 
+    margin-left: 0;
+  }
+
+  .girl {
+    float: right; 
+    margin-right: 0;
+  }
+  
+  .beeImg, .girlImg {
+    width: 128px;
+    height: 141px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -64px;
+  }
+
+  #intro:after {
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .bee .beeImg { 
+    background: url('../img/Bee.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+  .girl .girlImg { 
+    background: url('../img/girl.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+/* ========================== Detroit =========================== */
+
+  .detroit {
+  height: 325px;
+  clear: both;
+  background: url('../img/detroit_skyline2.jpg') no-repeat bottom center;
+  /*background-attachment: fixed;*/
+  color: #fff;
+  background-size: auto;
+  z-index: 2;
+}
+
+/* ========================== Photography =========================== */
+ #photos {
+  background: url('../img/bcg_profiles.png') repeat-y top center;
+  background-attachment: fixed;
+  color: #fff;
+  background-size: auto 45px;
+  z-index: 2;
+}
+
+  .photography {
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .camera {
+    margin-left: 0;
+  }
+
+  .photography h2 {
+        margin-top: 0;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .photography p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+  .camera { 
+    float: left; 
+    margin-left: 0;
+  }
+
+  .pictures {
+    float: right; 
+    margin-right: 0;
+  }
+  
+  .cameraImg {
+    width: 128px;
+    height: 141px;
+    position: absolute;
+    top: 30px;
+    /*left: 50%;*/
+    /*margin-left: -64px;*/
+  }
+
+   .picturesImg {
+    width: 128px;
+    height: 141px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -64px;
+  }
+
+  #photos:after {
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .camera .cameraImg { 
+    background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+  .pictures .picturesImg { 
+    background: url('../img/girl.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+/* ========================== States =========================== */
+ #states {
+  background: url('../img/bcg_profiles.png') repeat-y top center;
+  background-attachment: fixed;
+  color: #fff;
+  background-size: auto 45px;
+  z-index: 2;
+}
+
+  .state {
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .michigan {
+    margin-left: 0;
+  }
+
+  .state h2 {
+        margin-top: 0;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .state p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+  .michigan { 
+    float: left; 
+    margin-left: 0;
+  }
+
+  .florida {
+    float: right; 
+    margin-right: 0;
+  }
+  
+  .michiganImg, .floridaImg {
+    width: 128px;
+    height: 141px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -64px;
+  }
+
+  #states:after {
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .michigan .michiganImg { 
+    background: url('../img/michigan.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+  .florida .floridaImg { 
+    background: url('../img/florida.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+  .move-info {
+    background: #222;
+  }
+
+/* ========================== Park =========================== */
+
+.park {
+  position:fixed;
+  height: 1065px;
+  width: 100%;
+  clear: both;
+  background: url('../img/park1-01.svg') no-repeat top center;
+  background-attachment: fixed;
+  color: #fff;
+  background-size: auto;
+  z-index: 2;
+}
+
+
+
+/* ========================== Footer =========================== */
+
+footer {
+  clear:both;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================== Media Queries =========================== */
+
+@media only screen and (min-width: 480px) {
+    /* =General */
+
+    /* =Header */
+
+    /* =Profiles */
+
+    /* =Boxing Ring */
+
+    /* =Footer */
+}
+
+@media only screen and (min-width: 768px) {
+  /* =General */
+  #fixedElement {
+      top: 30px;
+      padding: 10px;
+      margin-left: -110px;
+      font-size: 1em;
+  }
+  /* =Header */
+  header {
+      padding: 420px 0 20px 0;
+  }
+  header h1 {
+      font-size: 3.125em;
+  }
+  header p {
+      font-size: 2em;
+      line-height: 1.2em;
+  }
+  /* Intro */
+    #intro {
+        background-size: auto auto;
+    }
+        #intro:after {
+            top: 170px;
+            width: 150px;
+            margin-left: -78px;
+            font-size: 3.75em;
+        }
+        .intro-section {
+            padding-top: 380px;
+        }
+        .intro-section h2 {
+            font-size: 2.5em;
+            line-height: 1.12em;
+            text-align: left;
+        }
+        .intro-section p {
+            font-family: 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
+            font-weight: normal;
+        }
+        .beeImg, .girlImg {
+            width: 276px;
+            height: 305px;
+            top: 60px;
+            margin-left: -138px;
+            background-size: 100% 100%;
+        }
+        .bee .beeImg,
+        .girl .girlImg {
+            background-size: 100% 100%;
+        }
+
+        .cameraImg {
+          width: 300px;
+          height: 250px;
+          position: absolute;
+          top: 30px;
+          /*left: 50%;*/
+          /*margin-left: -64px;*/
+        }
+
+        .camera .cameraImg { 
+          background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
+          background-size: 300px 250px;
+          border: 1px solid blue;
+        }
+}
+
+@media only screen and (min-width: 1140px) {
+    /* =General */
+
+    /* =Header */
+
+    /* =Profiles */
+
+    /* =Boxing Ring */
+
+    /* =Footer */
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ================ Print styles ============================ */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
