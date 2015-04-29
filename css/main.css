@@ -1,3 +1,6 @@
+/*font-family: 'Lobster', cursive;
+font-family: 'Raleway', sans-serif;*/
+
 html,
 button,
 input,
@@ -79,37 +82,52 @@ body {
 #fixedElement {
     position: fixed;
     top: 0;
-    left: 50%;
-    width: 200px;
+    left: 0;
+    width: 100%;
     text-align: center;
-    margin-left: -100px;
-    background-color: rgba(34,34,34,0.4);
-    color: rgba(255,255,255,0.7);
+    /*margin-left: -100px;*/
+    background-color: rgba(34,34,34,0.8);
+    color: rgba(255,255,255, 1);
     padding: 5px;
     z-index: 3;
     font-size: 12px;
 }
 
+#fixedElement ul li {
+  display: inline;
+  padding: 5px;
+}
+
 /* ========================== Header =========================== */
 
 header {
-    background: #222222;
+    font-family: 'Lobster', cursive;
+    background: #fff;
     background-size: auto 130px;
     color: #fff;
     text-align: center;
-    padding: 140px 0 20px 0;
+    padding: 140px 0 40px 0;
     position: relative;
     z-index: 2;
 }
-    header h1 {
-        font-size: 1.5em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-    header p {
-        color: #f3cc11;
-        line-height: 1.2em;
-    }
+
+.logo {
+  margin-left: 0;
+}
+  .logoImg {
+    width: 220px;
+    height: 130px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -90px;
+  }
+  .logo .logoImg { 
+    background: url('../img/KTlogo-nobee.png') no-repeat top left;
+    background-size: 220px auto;
+    /*border: 1px solid blue;*/
+  }
+
 
 /* ========================== Intro =========================== */
 main { }
@@ -151,12 +169,12 @@ main { }
     margin-left: 0;
   }
 
-  .girl {
+  .headshot {
     float: right; 
     margin-right: 0;
   }
   
-  .beeImg, .girlImg {
+  .beeImg, .headshotImg {
     width: 128px;
     height: 141px;
     position: absolute;
@@ -183,23 +201,24 @@ main { }
     border: 1px solid blue;
   }
 
-  .girl .girlImg { 
-    background: url('../img/girl.png') no-repeat top left;
+  .headshot .headshotImg { 
+    background: url('../img/headshot.jpg') no-repeat top left;
     background-size: 128px 141px;
     border: 1px solid blue;
+    border-radius: 100%;
   }
 
 /* ========================== Detroit =========================== */
 
   .detroit {
-  height: 325px;
-  clear: both;
-  background: url('../img/detroit_skyline2.jpg') no-repeat bottom center;
-  /*background-attachment: fixed;*/
-  color: #fff;
-  background-size: auto;
-  z-index: 2;
-}
+    height: 325px;
+    clear: both;
+    background: url('../img/detroit_skyline2.jpg') no-repeat bottom center;
+    /*background-attachment: fixed;*/
+    color: #fff;
+    background-size: auto;
+    z-index: 2;
+  }
 
 /* ========================== Photography =========================== */
  #photos {
@@ -368,17 +387,7 @@ main { }
 
 /* ========================== Park =========================== */
 
-.park {
-  position:fixed;
-  height: 1065px;
-  width: 100%;
-  clear: both;
-  background: url('../img/park1-01.svg') no-repeat top center;
-  background-attachment: fixed;
-  color: #fff;
-  background-size: auto;
-  z-index: 2;
-}
+
 
 
 
@@ -409,22 +418,35 @@ footer {
 @media only screen and (min-width: 768px) {
   /* =General */
   #fixedElement {
-      top: 30px;
+      /*top: 30px;*/
       padding: 10px;
-      margin-left: -110px;
+      /*margin-left: -110px;*/
       font-size: 1em;
+  }
+  #fixedElement ul li {
+    padding: 40px;
   }
   /* =Header */
   header {
-      padding: 420px 0 20px 0;
+      padding: 200px 0 45px 0;
   }
-  header h1 {
-      font-size: 3.125em;
+
+  .logo {
+    margin-left: 0;
   }
-  header p {
-      font-size: 2em;
-      line-height: 1.2em;
-  }
+    .logoImg {
+      width: 350px;
+      height: 200px;
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      margin-left: -150px;
+    }
+    .logo .logoImg { 
+      background: url('../img/KTlogo-nobee.png') no-repeat top left;
+      background-size: 350px auto;
+      /*border: 1px solid blue;*/
+    }
   /* Intro */
     #intro {
         background-size: auto auto;
