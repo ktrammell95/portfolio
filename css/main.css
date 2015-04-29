@@ -93,7 +93,7 @@ body {
 /* ========================== Header =========================== */
 
 header {
-    background: #222222 url('../img/KTlogo2.jpg') no-repeat top center;
+    background: #222222;
     background-size: auto 130px;
     color: #fff;
     text-align: center;
@@ -178,7 +178,7 @@ main { }
   }
 
   .bee .beeImg { 
-    background: url('../img/Bee.png') no-repeat top left;
+    background: url('../img/bee.png') no-repeat top left;
     background-size: 128px 141px;
     border: 1px solid blue;
   }
