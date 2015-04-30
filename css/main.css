@@ -1,5 +1,28 @@
-/*font-family: 'Lobster', cursive;
-font-family: 'Raleway', sans-serif;*/
+/* 
+ _____   _           _         _                        _                  
+|_   _| | |         | |       | |                      | |                 
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___ 
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams. 
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
 html,
 button,
@@ -9,10 +32,16 @@ textarea {
     color: #222;
 }
 
-html {
+body {
     font-size: 1em;
     line-height: 1.4;
 }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -24,6 +53,10 @@ html {
     text-shadow: none;
 }
 
+/*
+ * A better looking default horizontal rule
+ */
+
 hr {
     display: block;
     height: 1px;
@@ -33,12 +66,17 @@ hr {
     padding: 0;
 }
 
-audio,
-canvas,
-img,
-video {
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
     vertical-align: middle;
 }
+
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
     border: 0;
@@ -46,39 +84,108 @@ fieldset {
     padding: 0;
 }
 
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
 textarea {
     resize: vertical;
 }
 
-.browsehappy {
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
 
-/* ============================================================== */
-html, body {
-    width:100%;
-    height:100%;
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-color: #000000;
 }
-
 body {
-    font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background-color: #128977;
+  
+}
+.no-js {
+  padding-top: 106px;
+}
+h2 {
+  margin-top: 0;
+}
+.loading {
+  background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+  min-width: 960px;
+  opacity: 0;
+}
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+main {
+  overflow-x: hidden;
+}
+#preload {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1140px;
+.hsContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-/* ========================== General ========================== */
-
-.info {
-    display: none;
+.hsContent {
+  max-width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
+  .hsContent h2  {
+    color: #fff8de;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 5px;
+    font-size: 35px;
+    line-height: 38px;
+    margin-bottom: 12px;
+  }
+  .hsContent p {
+    width: 400px;
+    color: #b2b2b2;
+  }
+  .hsContent a {
+    color: #b2b2b2;
+    text-decoration: underline;
+  }
+
+/* ========================== Nav bar =========================== */
+
 #fixedElement {
     position: fixed;
     top: 0;
@@ -97,7 +204,6 @@ body {
   display: inline;
   padding: 5px;
 }
-
 /* ========================== Header =========================== */
 
 header {
@@ -144,409 +250,104 @@ header {
   }
 
 
-/* ========================== Intro =========================== */
-main { }
+/* ========================== Slide 1 =========================== */
 
-  #intro {
-    /*background: url('../img/bcg_profiles.png') repeat-y top center;*/
-    /*background-attachment: fixed;*/
-    color: #fff;
-    background-size: auto 45px;
-    z-index: 2;
-  }
-
-  .intro-section{
-    width: 45%;
-    margin: 0 5%;
-    padding: 210px 0 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .bee {
-    margin-left: 0;
-  }
-
-  .intro-section h2 {
-        margin-top: 0;
-        font-size: 1.2em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .intro-section p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
-  .bee { 
-    float: left; 
-    margin-left: 0;
-  }
-
-  .headshot {
-    float: right; 
-    margin-right: 0;
-  }
-  
-  .beeImg, .headshotImg {
-    width: 128px;
-    height: 141px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -64px;
-  }
-
-  #intro:after {
-    display: block;
-    position: absolute;
-    top: 218px;
-    left: 50%;
-    width: 75px;
-    margin-left: -39px;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .bee .beeImg { 
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-  .headshot .headshotImg { 
-    background: url('../img/headshot.jpg') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-    border-radius: 100%;
-  }
-
-/* ========================== Detroit =========================== */
-
-  .detroit {
-    height: 325px;
-    clear: both;
-    background: url('../img/detroit_skyline2.jpg') no-repeat bottom center;
-    /*background-attachment: fixed;*/
-    color: #fff;
-    background-size: auto;
-    z-index: 2;
-  }
-
-/* ========================== Photography =========================== */
- #photos {
-  background: url('../img/bcg_profiles.png') repeat-y top center;
-  background-attachment: fixed;
-  color: #fff;
-  background-size: auto 45px;
-  z-index: 2;
+#slide-1 .bcg {
+  background-image:url('../img/detroit_skyline3.jpg')
+}
+#slide-1 .hsContent {
+  bottom: 200px;
+  top: auto;
+}
+#slide-1 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-  .photography {
-    width: 45%;
-    margin: 0 5%;
-    padding: 210px 0 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
+/* ========================== Info Slide 1 =========================== */
 
-  .camera {
-    margin-left: 0;
-  }
-
-  .photography h2 {
-        margin-top: 0;
-        font-size: 1.2em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .photography p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
-  .camera { 
-    float: left; 
-    margin-left: 0;
-  }
-
-  .pictures {
-    float: right; 
-    margin-right: 0;
-  }
-  
-  .cameraImg {
-    width: 128px;
-    height: 141px;
-    position: absolute;
-    top: 30px;
-    /*left: 50%;*/
-    /*margin-left: -64px;*/
-  }
-
-   .picturesImg {
-    width: 128px;
-    height: 141px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -64px;
-  }
-
-  #photos:after {
-    display: block;
-    position: absolute;
-    top: 218px;
-    left: 50%;
-    width: 75px;
-    margin-left: -39px;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .camera .cameraImg { 
-    background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-  .pictures .picturesImg { 
-    background: url('../img/girl.png') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-/* ========================== States =========================== */
- #states {
-  background: url('../img/bcg_profiles.png') repeat-y top center;
-  background-attachment: fixed;
-  color: #fff;
-  background-size: auto 45px;
-  z-index: 2;
+#infoSlide-1 .bcg {
+  background: grey;
+}
+#infoSlide-1 .hsContent {
+  bottom: 200px;
+  top: auto;
 }
 
-  .state {
-    width: 45%;
-    margin: 0 5%;
-    padding: 210px 0 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
+/* ========================== Slide 2 =========================== */
+#slide-2 .bcg {
+  background-image:url('../img/bcg_slide-2.jpg')
+}
+#slide-2 .hsContent {
+  margin-left: -450px;
+  bottom: 200px;
+  top: auto;
+}
+#slide-2 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* ========================== Info Slide 2 =========================== */
 
-  .michigan {
-    margin-left: 0;
-  }
-
-  .state h2 {
-        margin-top: 0;
-        font-size: 1.2em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .state p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
-  .michigan { 
-    float: left; 
-    margin-left: 0;
-  }
-
-  .florida {
-    float: right; 
-    margin-right: 0;
-  }
-  
-  .michiganImg, .floridaImg {
-    width: 128px;
-    height: 141px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -64px;
-  }
-
-  #states:after {
-    display: block;
-    position: absolute;
-    top: 218px;
-    left: 50%;
-    width: 75px;
-    margin-left: -39px;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .michigan .michiganImg { 
-    background: url('../img/michigan.png') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-  .florida .floridaImg { 
-    background: url('../img/florida.png') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-  .move-info {
-    background: #222;
-  }
-
-/* ========================== Park =========================== */
-
-
-
-
-
-/* ========================== Footer =========================== */
-
-footer {
-  clear:both;
-  background-color: #ffffff;
-  text-align: center;
-  position: relative;
-  z-index: 2;
+#infoSlide-2 .bcg {
+  background: grey;
+}
+#infoSlide-2 .hsContent {
+  bottom: 200px;
+  top: auto;
 }
 
-/* ========================== Media Queries =========================== */
+/* ========================== Slide 3 =========================== */
+#slide-3 .bcg {
+  background-image:url('../img/tiy.jpg')
+}
+#slide-3 .hsContent {
+  margin-left: -239px;
+}
+#slide-3 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* ========================== Info Slide 3 =========================== */
 
-@media only screen and (min-width: 480px) {
-    /* =General */
-
-    /* =Header */
-
-    /* =Profiles */
-
-    /* =Boxing Ring */
-
-    /* =Footer */
+#infoSlide-3 .bcg {
+  background: grey;
+}
+#infoSlide-3 .hsContent {
+  bottom: 200px;
+  top: auto;
 }
 
-@media only screen and (min-width: 768px) {
-  /* =General */
-  #fixedElement {
-      /*top: 30px;*/
-      padding: 10px;
-      /*margin-left: -110px;*/
-      font-size: 1em;
-  }
-  #fixedElement ul li {
-    padding: 40px;
-  }
-  /* =Header */
-  header {
-      padding: 200px 0 45px 0;
-  }
-
-  .logo {
-    margin-left: 0;
-  }
-    .logoImg {
-      width: 350px;
-      height: 200px;
-      position: absolute;
-      top: 55px;
-      left: 50%;
-      margin-left: -150px;
-    }
-    .logo .logoImg { 
-      background: url('../img/KTlogo-nobee.png') no-repeat top left;
-      background-size: 350px auto;
-      /*border: 1px solid blue;*/
-    }
-
-  .beelogoImg {
-    width: 100px;
-    height: 90px;
-    position: absolute;
-    top: 105px;
-    left: 50%;
-    margin-left: 120px;
-  }
-  
-  .logo .beelogoImg {
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 100px auto;
-    /*border: 1px solid red;*/
-  }
-  /* Intro */
-    #intro {
-        background-size: auto auto;
-    }
-        #intro:after {
-            top: 170px;
-            width: 150px;
-            margin-left: -78px;
-            font-size: 3.75em;
-        }
-        .intro-section {
-            padding-top: 380px;
-        }
-        .intro-section h2 {
-            font-size: 2.5em;
-            line-height: 1.12em;
-            text-align: left;
-        }
-        .intro-section p {
-            font-family: 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-            font-weight: normal;
-        }
-        .beeImg, .girlImg {
-            width: 276px;
-            height: 305px;
-            top: 60px;
-            margin-left: -138px;
-            background-size: 100% 100%;
-        }
-        .bee .beeImg,
-        .girl .girlImg {
-            background-size: 100% 100%;
-        }
-
-        .cameraImg {
-          width: 300px;
-          height: 250px;
-          position: absolute;
-          top: 30px;
-          /*left: 50%;*/
-          /*margin-left: -64px;*/
-        }
-
-        .camera .cameraImg { 
-          background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
-          background-size: 300px 250px;
-          border: 1px solid blue;
-        }
+/* ========================== Slide 4 =========================== */
+#slide-4 .bcg {
+  background-image:url('../img/st_pete.png')
+}
+#slide-4 .hsContent {
+  margin-left: -450px;
 }
 
-@media only screen and (min-width: 1140px) {
-    /* =General */
-
-    /* =Header */
-
-    /* =Profiles */
-
-    /* =Boxing Ring */
-
-    /* =Footer */
+#slide-4 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Image replacement
+ */
+
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
+    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -557,10 +358,18 @@ footer {
     height: 150%;
 }
 
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
 .hidden {
     display: none !important;
     visibility: hidden;
 }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
 
 .visuallyhidden {
     border: 0;
@@ -573,6 +382,11 @@ footer {
     width: 1px;
 }
 
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -583,86 +397,130 @@ footer {
     width: auto;
 }
 
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
 .invisible {
     visibility: hidden;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
 .clearfix {
     *zoom: 1;
 }
 
-/* ================ Print styles ============================ */
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
 
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
 
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

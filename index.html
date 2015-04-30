@@ -2,129 +2,150 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Katherine Trammell - Web Designer</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Katherine Trammell - Web Design</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-      <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
 
-      <link href='http://fonts.googleapis.com/css?family=Lobster|Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-      <link rel="stylesheet" href="css/main.css">
+  <!--
+    * This demo was prepared for you by Petr Tichy - Ihatetomatoes.net
+    * Want to see more similar demos and tutorials?
+    * Help by spreading the word about Ihatetomatoes blog.
+    * Facebook - https://www.facebook.com/ihatetomatoesblog
+    * Twitter - https://twitter.com/ihatetomatoes
+    * Google+ - https://plus.google.com/u/0/109859280204979591787/about
+  -->
 
-      <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    <style type="text/css">
+    body {
+    font-family: 'Open Sans', sans-serif;
+    }
+    </style>
   </head>
-  <body>
-    <div id="skrollr-body">
+  <body class="loading">
     <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    
-      <nav id="fixedElement">
-        <ul>
-          <li>Photography</li>
-          <li>Portfolio</li>
-          <li>Resume</li>
-          <li>Recommendations</li>
-        </ul>
-      </nav>
-
-      <header>
-          <div class="wrapper clearfix">
-              <div data-100-top="opacity: 1" data-top="opacity: 0">
-                  <div class="logo">
-                    <div class="logoImg"></div>
-                    <div class="beelogoImg"></div>
-                  </div>
-              </div>
-
-          </div>
-      </header>
-          
-      <main>
-          <div id="intro" 
-            data-bottom-top="background-position: 50% 0%"
-            data-top-bottom="background-position: 50% -20%">
-            <div class="wrapper clearfix">
-              <div class="intro-section bee">
-                  <div class="beeImg"></div>
-                  <div>
-                      <p>This is for the Bee</p>
-                  </div>
-              </div>
-              <div class="intro-section headshot">
-                  <div class="headshotImg"></div>
-                  <div>
-                      <p>This is for the girl</p>
-                  </div>
-              </div>
-            </div>
-        </div><!--intro-->
-
-        <div class="detroit">Detroit
-          <div class="detroitImg"></div>
-        </div>
-
-        <div id="photos">
-          <div class="wrapper clearfix">
-            <div class="photography camera">
-              <div class="cameraImg"></div>
-              <div>
-                  <p>This is for the camera</p>
-              </div>
-            </div>
-            <div class="photography pictures">
-                <div class="picturesImg"></div>
-                <div>
-                    <p>This is for the pictures</p>
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="move-info">Info
-          <div class=""></div>
-        </div>
-
-        <div id="states">
-          <div class="wrapper clearfix">
-           <div class="state michigan">
-            <div class="michiganImg"></div>
-            Michigan
-            </div>
-           <div class="state florida">
-            <div class="floridaImg"></div>Florida</div>
-          </div>
-        </div>
-
-      </main><!-- /main -->
-
         
-        <footer>
-            <div class="wrapper clearfix">
-                <p>&copy; 2015 Katherine Trammell</p>
+    <div id="preload">
+      <img src="img/bcg_slide-1.jpg">
+      <img src="img/bcg_slide-2.jpg">
+      <img src="img/bcg_slide-3.jpg">
+      <img src="img/detroit_skyline3.jpg">
+    </div>
+        
+    <nav id="fixedElement">
+      <ul>
+        <li>Photography</li>
+        <li>Portfolio</li>
+        <li>Resume</li>
+        <li>Recommendations</li>
+      </ul>
+    </nav>
+    
+    <header>
+      <div class="wrapper clearfix">
+        <div>
+          <div class="logo">
+            <div class="logoImg"
+            data-60-top="opacity: 1"
+            data-top="opacity: 0">
             </div>
-        </footer>
-
-<!-- =============== Scripts ==================== -->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
-        <script type="text/javascript" src="js/skrollr.min.js"></script>
-                <script type="text/javascript">
-        var s = skrollr.init({
-            forceHeight: false
-        });
-        </script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
+            <div class="beelogoImg"></div>
+          </div>
         </div>
-    </body>
+      </div>
+    </header>
+
+    <main>
+      <section id="slide-1" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Slide 1</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="infoSlide-1" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Info Slide 1</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <section id="slide-2" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Slide 2</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="infoSlide-2" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Info Slide 2</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <section id="slide-3" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Slide 3</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="infoSlide-3" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Info Slide 3</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="slide-4" class="homeSlide">
+        <div class="bcg">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <h2>Slide 4</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+    </main>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>

@@ -1,4 +1,5 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*font-family: 'Lobster', cursive;
+font-family: 'Raleway', sans-serif;*/
 
 html,
 button,
@@ -56,6 +57,11 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* ============================================================== */
+html, body {
+    width:100%;
+    height:100%;
+}
 
 body {
     font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
@@ -68,165 +74,349 @@ body {
     max-width: 1140px;
 }
 
-/* =General */
+/* ========================== General ========================== */
+
 .info {
     display: none;
 }
-/*#fixedElement {
+#fixedElement {
     position: fixed;
     top: 0;
-    left: 50%;
-    width: 200px;
+    left: 0;
+    width: 100%;
     text-align: center;
-    margin-left: -100px;
-    background-color: rgba(34,34,34,0.4);
-    color: rgba(255,255,255,0.7);
+    /*margin-left: -100px;*/
+    background-color: rgba(34,34,34,0.8);
+    color: rgba(255,255,255, 1);
     padding: 5px;
     z-index: 3;
     font-size: 12px;
-}*/
-/* =Header */
+}
+
+#fixedElement ul li {
+  display: inline;
+  padding: 5px;
+}
+
+/* ========================== Header =========================== */
+
 header {
-    background: #222222;
+    font-family: 'Lobster', cursive;
+    background: #fff;
+    background-size: auto 130px;
     color: #fff;
     text-align: center;
-    padding: 50px 0 20px 0;
+    padding: 140px 0 40px 0;
     position: relative;
     z-index: 2;
 }
-    header h1 {
-        font-size: 1.5em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-    header p {
-        color: #f3cc11;
-        line-height: 1.2em;
+
+.logo {
+  margin-left: 0;
+}
+  .logoImg {
+    width: 220px;
+    height: 130px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -90px;
+  }
+  .logo .logoImg { 
+    background: url('../img/KTlogo-nobee.png') no-repeat top left;
+    background-size: 220px auto;
+    /*border: 1px solid blue;*/
+  }
+
+  .beelogoImg {
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: 85px;
+  }
+  
+  .logo .beelogoImg {
+    background: url('../img/bee.png') no-repeat top left;
+    background-size: 60px auto;
+    /*border: 1px solid red;*/
+  }
+
+
+/* ========================== Intro =========================== */
+main { }
+
+  #intro {
+    /*background: url('../img/bcg_profiles.png') repeat-y top center;*/
+    /*background-attachment: fixed;*/
+    color: #fff;
+    background-size: auto 45px;
+    z-index: 2;
+  }
+
+  .intro-section{
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bee {
+    margin-left: 0;
+  }
+
+  .intro-section h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+    .intro-section p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
     }
 
-/* =Profiles */
-main { }
-    #profile {
-        /*background: url('../img/KTlogo2.jpg') repeat-y top center;*/
-        background-attachment: fixed;
-        color: #fff;
-        background-size: auto 45px;
-        z-index: 2;
+  .bee { 
+    float: left; 
+    margin-left: 0;
+  }
+
+  .headshot {
+    float: right; 
+    margin-right: 0;
+  }
+  
+  .beeImg{
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    top: 30px;
+    left: 65%;
+  }
+
+  .headshotImg {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: -75px
+  }
+
+  #intro:after {
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .bee .beeImg { 
+    background: url('../img/bee.png') no-repeat top left;
+    background-size: 60px auto;
+  }
+
+  .headshot .headshotImg { 
+    background: url('../img/headshot.jpg') no-repeat top left;
+    background-size: 160px auto;
+    border-radius: 100%;
+  }
+
+/* ========================== Detroit =========================== */
+
+  .detroit {
+    height: 325px;
+    clear: both;
+    background: url('../img/detroit_skyline2.jpg') no-repeat bottom center;
+    /*background-attachment: fixed;*/
+    color: #fff;
+    background-size: auto;
+    z-index: 2;
+  }
+
+/* ========================== Photography =========================== */
+ #photos {
+  background: url('../img/bcg_profiles.png') repeat-y top center;
+  background-attachment: fixed;
+  color: #fff;
+  background-size: auto 45px;
+  z-index: 2;
+}
+
+  .photography {
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .camera {
+    margin-left: 0;
+  }
+
+  .photography h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
     }
-    .girl {
-        width: 45%;
-        margin: 0 5%;
-        padding: 210px 0 20px 0;
-        position: relative;
-        overflow: hidden;
+    .photography p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
     }
-    .girlA {
-        margin-left: 0;
-    }
-    .girl h2 {
+
+  .camera { 
+    float: left; 
+    margin-left: 0;
+  }
+
+  .pictures {
+    float: right; 
+    margin-right: 0;
+  }
+  
+  .cameraImg {
+    width: 128px;
+    height: 141px;
+    position: absolute;
+    top: 30px;
+    /*left: 50%;*/
+    /*margin-left: -64px;*/
+  }
+
+   .slides {
+    width: 185px;
+    height: 198px;
+    position: absolute;
+    top: 30px;
+    margin-left: auto;
+    border: 1px solid red;
+  }
+
+  #photos:after {
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .camera .cameraImg { 
+    background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+/* ========================== States =========================== */
+ #states {
+  background: url('../img/bcg_profiles.png') repeat-y top center;
+  background-attachment: fixed;
+  color: #fff;
+  background-size: auto 45px;
+  z-index: 2;
+}
+
+  .state {
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .michigan {
+    margin-left: 0;
+  }
+
+  .state h2 {
         margin-top: 0;
         font-size: 1.2em;
         line-height: 1.2em;
         text-transform: uppercase;
         text-align: center;
     }
-    .girl p {
+    .state p {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
     }
-    .girlA { float: left; margin-left: 0;}
-    .girlB { float: right; margin-right: 0;}
-    .girlImg {
-        width: 128px;
-        height: 141px;
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        margin-left: -64px;
-    }
-    #profile:after {
-/*        content: 'VS';
-*/        display: block;
-        position: absolute;
-        top: 218px;
-        left: 50%;
-        width: 75px;
-        margin-left: -39px;
-        text-align: center;
-        font-size: 1.5em;
-        font-family: 'Open Sans', sans-serif;
-    }
-    .girlA .girlImg {
-        background: url('../img/Bee.png') no-repeat top left;
-        background-size: 128px 141px;
-    }
-    .girlB .girlImg {
-        background: url('../img/girl.png') no-repeat top left;
-        background-size: 128px 141px;
-    }
 
-/* =Boxing Ring */
-#boxingRing {
-    background-color: #e7e7e7;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-}
-    #stage {
-        width: 300px;
-        height: 273px;
-        background: url('../img/bcg_ring.png') no-repeat top right;
-        background-size: 300px 273px;
-        position: absolute;
-        top: 35px;
-        left: 50%;
-        margin-left: -150px;
-    }
-    .boxerTop {
-        width: 60px;
-        height: 51px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -117px 0 0 -84px;
-        z-index: 1;
-    }
-        .boxerTopA {
-            background: url('../img/img_boxerA-top.png') no-repeat 0 0;
-            background-size: 60px 51px;
-        }
-        .boxerTopB {
-            background: url('../img/img_boxerB-top.png') no-repeat 0 0;
-            background-size: 60px 51px;
-            margin: 24px 0 0 30px;
-        }
-    .indicator,
-    #round1,
-    #round2 {
-        display: none;
-    }
-    .winnersText {
-        margin: 350px -6% 0 -6%;
-        color: #fff;
-        background-color: rgba(31,31,31,1);
-        padding: 20px;
-    }
-        .winnersText h2 {
-            color: #f3cc11;
-        }
+  .michigan { 
+    float: left; 
+    margin-left: 0;
+  }
 
-/* =Footer */
-footer {
-    background-color: #ffffff;
+  .florida {
+    float: right; 
+    margin-right: 0;
+  }
+  
+  .michiganImg, .floridaImg {
+    width: 128px;
+    height: 141px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -64px;
+  }
+
+  #states:after {
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
     text-align: center;
-    position: relative;
-    z-index: 2;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .michigan .michiganImg { 
+    background: url('../img/michigan.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+  .florida .floridaImg { 
+    background: url('../img/florida.png') no-repeat top left;
+    background-size: 128px 141px;
+    border: 1px solid blue;
+  }
+
+  .move-info {
+    background: #222;
+  }
+
+/* ========================== Park =========================== */
+
+
+
+
+
+/* ========================== Footer =========================== */
+
+footer {
+  clear:both;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+/* ========================== Media Queries =========================== */
 
 @media only screen and (min-width: 480px) {
     /* =General */
@@ -241,219 +431,108 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    /* =General */
-    #fixedElement {
-        top: 30px;
-        padding: 10px;
-        margin-left: -110px;
-        font-size: 1em;
+  /* =General */
+  #fixedElement {
+      /*top: 30px;*/
+      padding: 10px;
+      /*margin-left: -110px;*/
+      font-size: 1em;
+  }
+  #fixedElement ul li {
+    padding: 40px;
+  }
+  /* =Header */
+  header {
+      padding: 200px 0 45px 0;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+    .logoImg {
+      width: 350px;
+      height: 200px;
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      margin-left: -150px;
     }
-    .indicator {
-        display: block;
-        position: fixed;
-        bottom: 50%;
-        left: 50%;
-        height: 5px;
-        width: 10px;
-        background-color: #ABCC14;
-        margin: 0 0 0 -350px;
+    .logo .logoImg { 
+      background: url('../img/KTlogo-nobee.png') no-repeat top left;
+      background-size: 350px auto;
+      /*border: 1px solid blue;*/
     }
-        .indicator p {
-            text-align: center;
-            margin: 0 0 0 -30px;
-            position: absolute;
-            bottom: -34px;
-            text-transform: uppercase;
-        }
-    .indicatorB {
-        margin: 0 0 0 350px;
-    }
-    /* =Header */
-    header {
-        padding: 100px 0 20px 0;
-    }
-    header h1 {
-        font-size: 3.125em;
-    }
-    header p {
-        font-size: 2em;
-        line-height: 1.2em;
-    }
-    /* =Profiles */
-    #profile {
+
+  .beelogoImg {
+    width: 100px;
+    height: 90px;
+    position: fixed;
+    top: 105px;
+    left: 50%;
+    margin-left: 120px;
+  }
+  
+  .logo .beelogoImg {
+    background: url('../img/bee.png') no-repeat top left;
+    background-size: 100px auto;
+    /*border: 1px solid red;*/
+  }
+  /* Intro */
+    #intro {
         background-size: auto auto;
     }
-        #profile:after {
+        #intro:after {
             top: 170px;
             width: 150px;
             margin-left: -78px;
             font-size: 3.75em;
         }
-        .girl {
+        .intro-section {
             padding-top: 380px;
         }
-        .girl h2 {
+        .intro-section h2 {
             font-size: 2.5em;
             line-height: 1.12em;
             text-align: left;
         }
-        .girl p {
+        .intro-section p {
             font-family: 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
             font-weight: normal;
         }
+        .beeImg{
+            width: 90px;
+            height: 85px;
+            position: absolute;
+            top: 30px;
+            left: 65%;
+          } 
+
         .girlImg {
-            width: 276px;
-            height: 305px;
-            top: 60px;
-            margin-left: -138px;
+          width: 276px;
+          height: 305px;
+          top: 60px;
+          margin-left: -138px;
+          background-size: 100% 100%;
+        }
+        .bee .beeImg,
+        .girl .girlImg {
             background-size: 100% 100%;
         }
-        .girlA .girlImg,
-        .girlB .girlImg {
-            background-size: 100% 100%;
-        }
-    /* =Boxing Ring */
-    #boxingRing {
-        background-color: #e7e7e7;
-        position: relative;
-        height: 4650px;
-        overflow: hidden;
-    }
-        #stage {
-            width: 718px;
-            height: 654px;
-            background: url('../img/bcg_ring.png') no-repeat top right;
-            background-size: 718px 654px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            margin-left: -359px;
-            margin-top: -327px;
-        }
-        .boxerTop {
-            width: 142px;
-            height: 123px;
-            margin: -240px 0 0 -200px;
-        }
-            .boxerTopA {
-                background: url('../img/img_boxerA-top.png') no-repeat 0 0;
-                background-size: 142px 123px;
-            }
-            .boxerTopB {
-                background: url('../img/img_boxerB-top.png') no-repeat 0 0;
-                background-size: 142px 123px;
-                margin: 50px 0 0 70px;
-            }
-        #round1,
-        #round2 {
-            display: block;
-            padding: 20px 30px;
-            font-size: 2em;
-            background-color: #222222;
-            color: #fff;
-            text-transform: uppercase;
-            width: 170px;
-            text-align: center;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            margin: -80px 0 0 -110px;
-        }
-        #moves {
-            width: 313px;
-            height: 295px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -180px 0 0 -150px;;
-            background: url('../img/img_move1.png') no-repeat 0 0;
-        }
-        #winnersTrophy {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(31,31,31,0.5);
-            
 
-  -webkit-transform: translateY(100%); 
-      -ms-transform: translateY(100%); 
-          transform: translateY(100%);
-
-        }
-            .winnersText {
-                position: fixed;
-                top: 320px;
-                left: 50%;
-                max-width: 500px;
-                margin: 0 0 0 -250px;
-                background-color: transparent;
-                padding: 0;
-                text-align: center;
-                z-index: 2;
-            }
-                .winnersText h2 {
-                    font-size: 40px;
-                    margin-bottom: 0;
-                }
-            #belt,
-            #beam {
-                width: 537px;
-                height: 221px;
-                background: url('../img/img_belt.png') no-repeat 0 0;
-                position: fixed;
-                top: 30px;
-                left: 50%;
-                margin-left: -272px;
-            }
-            #beam {
-                background: url('../img/img_beam.png') no-repeat 0 0;
-                width: 819px;
-                height: 354px;
-                margin-left: -409px;
-                top: 0;
-            }
-    /* Remove fixed positioning for touch devices */
-    .touch #stage {
-        position: absolute;
-        top: 40px;
-        margin-top: 0;
-    }
-    .touch #boxingRing {
-        height: 1154px; /* experimential value set at the end of tweaking iPad Styles */
-    }
-    .touch .indicator,
-    .touch #belt,
-    .touch #beam,
-    .touch #winnersTrophy {
-        display: none;
-        margin-left: -9999em;
-    }
-    .touch .winnersText {
-        position: absolute;
-        top: 704px; /* stage height 654px + 50px */
-        background-color: transparent;
-        padding: 20px;
-        width: 100%;
-        max-width: none;
-        left: 0;
-        margin: 0;
-        text-align: center;
-        color: #222222;
-    }
-        .touch .winnersText h2 {
-            color: #222222;
-        }
-        .touch .winnersText p {
-            max-width: 550px;
-            margin: 0 auto;
-        }
-        .touch .info {
-            display: block;
+        .cameraImg {
+          width: 300px;
+          height: 250px;
+          position: absolute;
+          top: 30px;
+          /*left: 50%;*/
+          /*margin-left: -64px;*/
         }
 
-    /* =Footer */
+        .camera .cameraImg { 
+          background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
+          background-size: 300px 250px;
+          border: 1px solid blue;
+        }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -530,69 +609,68 @@ footer {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+/* ================ Print styles ============================ */
 
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
+  img {
+    max-width: 100% !important;
+  }
 
-    @page {
-        margin: 0.5cm;
-    }
+  @page {
+    margin: 0.5cm;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
+
