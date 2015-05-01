@@ -237,7 +237,7 @@ header {
 /* ========================== Slide 1 =========================== */
 
 #slide-1 .bcg {
-  background-image:url('../img/bcg_slide-1.jpg')
+  background-image:url('../img/rencen.jpg')
 }
 #slide-1 .hsContent {
   background: rgba(34,34,34,0.8);
@@ -263,7 +263,7 @@ header {
 
 /* ========================== Slide 2 =========================== */
 #slide-2 .bcg {
-  background-image:url('../img/bcg_slide-2.jpg')
+  background-image:url('../img/fall.jpg')
 }
 #slide-2 .hsContent {
   /*margin-left: -450px;*/
@@ -287,7 +287,7 @@ header {
 
 /* ========================== Slide 3 =========================== */
 #slide-3 .bcg {
-  background-image:url('../img/bcg_slide-3.jpg')
+  background-image:url('../img/tiy2.jpg')
 }
 #slide-3 .hsContent {
   /*margin-left: -239px;*/
@@ -309,7 +309,7 @@ header {
 
 /* ========================== Slide 4 =========================== */
 #slide-4 .bcg {
-  background-image:url('../img/bcg_slide-1.jpg')
+  background-image:url('../img/sunset2.jpg')
 }
 #slide-4 .hsContent {
   /*margin-left: -450px;*/
