@@ -102,7 +102,7 @@ h2 {
   background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
-  min-width: 960px;
+  min-width: 320px;
   opacity: 0;
 }
 ul{
@@ -437,12 +437,21 @@ header {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-    /* Style adjustments for viewports that meet the condition */
-}
+/*@media only screen and (min-width: 480px) {
+     Style adjustments for viewports that meet the condition 
+}*/
 
 @media only screen and (min-width: 790px) {
-    /* Style adjustments for viewports that meet the condition */
+    
+  #slide-1 .bcg {
+  background-image:url('../img/rencen.jpg')
+  }
+  #slide-2 .bcg {
+  background-image:url('../img/fall.jpg')
+  }
+  #slide-4 .bcg {
+  background-image:url('../img/sunset2.jpg')
+  }
 }
 
 @media print,
