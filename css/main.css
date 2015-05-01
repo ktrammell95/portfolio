@@ -237,7 +237,7 @@ header {
 /* ========================== Slide 1 =========================== */
 
 #slide-1 .bcg {
-  background-image:url('../img/rencen.jpg')
+  background-image:url('../img/rencen-reduced.jpg')
 }
 #slide-1 .hsContent {
   background: rgba(34,34,34,0.8);
@@ -309,7 +309,7 @@ header {
 
 /* ========================== Slide 4 =========================== */
 #slide-4 .bcg {
-  background-image:url('../img/sunset2.jpg')
+  background-image:url('../img/sunset-reduced.jpg')
 }
 #slide-4 .hsContent {
   /*margin-left: -450px;*/
