@@ -14,7 +14,11 @@
   $window = $(window);
   $slide = $('.homeSlide');
   $body = $('body');
-  
+ 
+  $window.ready(function(){
+    $('html,body').animate({ scrollTop: 7000 }, 0);   
+});
+
     //FadeIn all sections   
   $body.imagesLoaded( function() {
     setTimeout(function() {
@@ -31,7 +35,13 @@
   function adjustWindow(){
     
     // Init Skrollr
-    
+    var s = skrollr.init({
+          render: function(data) {
+              //Log the current scroll position.
+              console.log(data.curTop);
+          },
+            forceHeight: false
+        });
     
     // Get window size
       winH = $window.height();
@@ -44,9 +54,10 @@
       // Resize our slides
       $slide.height(winH);
       
-      // Refresh Skrollr after resizing our sections
-      
+      // Refresh Skrollr after resizing our sections 
       
   }
+
+
     
 } )( jQuery );

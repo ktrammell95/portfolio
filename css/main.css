@@ -90,7 +90,7 @@ body, html {
   background-color: #000000;
 }
 body {
-  
+  font-size: 0.75em;
 }
 .no-js {
   padding-top: 106px;
@@ -98,11 +98,13 @@ body {
 h2 {
   margin-top: 0;
 }
+
 .loading {
   background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
   min-width: 320px;
+  height:100%;
   opacity: 0;
 }
 ul{
@@ -126,7 +128,7 @@ main {
   top: 0;
   left: 0;
 }
-.bcg {
+.wrapper {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -171,7 +173,7 @@ main {
 /* ========================== Nav bar =========================== */
 
 #fixedElement {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -185,8 +187,18 @@ main {
 }
 
 #fixedElement ul li {
-  display: inline;
-  padding: 0 5px 0 5px;
+  /*display: inline;*/
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  font-size: 1.5em;
+}
+
+ul.nav-bar li:hover { 
+  background: #555;  
+}
+
+ul.nav-bar li:hover ul { 
+  display: block;  
 }
 /* ========================== Header =========================== */
 
@@ -236,23 +248,39 @@ header {
 
 /* ========================== Slide 1 =========================== */
 
-#slide-1 .bcg {
-  background-image:url('../img/rencen-reduced.jpg')
+#detroit .wrapper {
+  /*background-image:url('../img/rencen-reduced.jpg');*/
+  background: tan;
 }
-#slide-1 .hsContent {
+#detroit .hsContent {
   background: rgba(34,34,34,0.8);
-  left: 1%;
-  top: 5%;
+  left: 3%;
+  top: 35%;
 }
-#slide-1 h2 {
+#detroit h2 {
   background: none;
   padding-left: 0;
   padding-right: 0;
+  font-size: 2em;
 }
+
+  .headshotImg {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: -75px
+  }
+  .headshot .headshotImg { 
+    background: url('../img/headshot.jpg') no-repeat top left;
+    background-size: 160px auto;
+    border-radius: 100%;
+  }
 
 /* ========================== Info Slide 1 =========================== */
 
-#infoSlide-1 .bcg {
+#infoSlide-1 .wrapper {
   background: grey;
 }
 #infoSlide-1 .hsContent {
@@ -262,8 +290,9 @@ header {
 }
 
 /* ========================== Slide 2 =========================== */
-#slide-2 .bcg {
-  background-image:url('../img/fall-reduced.jpg')
+#slide-2 .wrapper {
+  /*background-image:url('../img/fall-reduced.jpg');*/
+  background: red;
 }
 #slide-2 .hsContent {
   /*margin-left: -450px;*/
@@ -277,7 +306,7 @@ header {
 }
 /* ========================== Info Slide 2 =========================== */
 
-#infoSlide-2 .bcg {
+#infoSlide-2 .wrapper {
   background: grey;
 }
 #infoSlide-2 .hsContent {
@@ -286,8 +315,9 @@ header {
 }
 
 /* ========================== Slide 3 =========================== */
-#slide-3 .bcg {
-  background-image:url('../img/tiy2.jpg')
+#slide-3 .wrapper {
+  /*background-image:url('../img/tiy2.jpg');*/
+  background: lightblue;
 }
 #slide-3 .hsContent {
   /*margin-left: -239px;*/
@@ -299,7 +329,7 @@ header {
 }
 /* ========================== Info Slide 3 =========================== */
 
-#infoSlide-3 .bcg {
+#infoSlide-3 .wrapper {
   background: grey;
 }
 #infoSlide-3 .hsContent {
@@ -308,8 +338,9 @@ header {
 }
 
 /* ========================== Slide 4 =========================== */
-#slide-4 .bcg {
-  background-image:url('../img/sunset-reduced.jpg')
+#slide-4 .wrapper {
+  /*background-image:url('../img/sunset-reduced.jpg');*/
+  background: pink;
 }
 #slide-4 .hsContent {
   /*margin-left: -450px;*/
@@ -437,19 +468,82 @@ header {
    Modify as content requires.
    ========================================================================== */
 
-/*@media only screen and (min-width: 480px) {
-     Style adjustments for viewports that meet the condition 
-}*/
+@media only screen and (min-width: 440px) {
+/* ========================== Nav bar =========================== */
+
+#fixedElement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /*margin-left: -100px;*/
+    background-color: rgba(34,34,34,0.8);
+    color: rgba(255,255,255, 1);
+    /*padding: 5px;*/
+    z-index: 3;
+    font-size: 15px;
+}
+
+#fixedElement ul li {
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+/* ========================== Header =========================== */
+
+header {
+    font-family: 'Lobster', cursive;
+    background: #fff;
+    background-size: auto 130px;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0 40px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+  margin-left: 0;
+}
+  .logoImg {
+    width: 220px;
+    height: 130px;
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    /*margin-left: -90px;*/
+  }
+  .logo .logoImg { 
+    background: url('../img/KTlogo-nobee.png') no-repeat top left;
+    background-size: 220px auto;
+    /*border: 1px solid blue;*/
+  }
+
+  .beelogoImg {
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    top: 80px;
+    left: 68%;
+    /*margin-left: 85px;*/
+  }
+  
+  .logo .beelogoImg {
+    background: url('../img/bee.png') no-repeat top left;
+    background-size: 60px auto;
+    /*border: 1px solid red;*/
+  }
+}
 
 @media only screen and (min-width: 790px) {
     
-  #slide-1 .bcg {
+  #detroit .wrapper {
   background-image:url('../img/rencen.jpg')
   }
-  #slide-2 .bcg {
+  #slide-2 .wrapper {
   background-image:url('../img/fall.jpg')
   }
-  #slide-4 .bcg {
+  #slide-4 .wrapper {
   background-image:url('../img/sunset2.jpg')
   }
 }
