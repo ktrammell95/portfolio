@@ -173,7 +173,7 @@ main {
 /* ========================== Nav bar =========================== */
 
 #fixedElement {
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -200,17 +200,10 @@ ul.nav-bar li:hover {
 ul.nav-bar li:hover ul { 
   display: block;  
 }
-/* ========================== Header =========================== */
 
-header {
-    font-family: 'Lobster', cursive;
-    background: #fff;
-    background-size: auto 130px;
-    color: #fff;
-    text-align: center;
-    padding: 140px 0 40px 0;
-    position: relative;
-    z-index: 2;
+.spacer {
+  height: 190px;
+  width: 100%;
 }
 
 .logo {
@@ -220,37 +213,22 @@ header {
     width: 220px;
     height: 130px;
     position: absolute;
-    top: 50px;
-    left: 10%;
+    top: 20%;
+    left: 55%;
     /*margin-left: -90px;*/
   }
   .logo .logoImg { 
-    background: url('../img/KTlogo-nobee.png') no-repeat top left;
-    background-size: 220px auto;
+    background: url('../img/KT.svg') no-repeat top left;
+    background-size: 100px auto;
     /*border: 1px solid blue;*/
-  }
-
-  .beelogoImg {
-    width: 60px;
-    height: 55px;
-    position: absolute;
-    top: 80px;
-    left: 68%;
-    /*margin-left: 85px;*/
-  }
-  
-  .logo .beelogoImg {
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 60px auto;
-    /*border: 1px solid red;*/
   }
 
 
 /* ========================== Slide 1 =========================== */
 
 #detroit .wrapper {
-  /*background-image:url('../img/rencen-reduced.jpg');*/
-  background: tan;
+  background-image:url('../img/rencen-reduced.jpg');
+  /*background: tan;*/
 }
 #detroit .hsContent {
   background: rgba(34,34,34,0.8);
@@ -291,8 +269,8 @@ header {
 
 /* ========================== Slide 2 =========================== */
 #slide-2 .wrapper {
-  /*background-image:url('../img/fall-reduced.jpg');*/
-  background: red;
+  background-image:url('../img/fall-reduced.jpg');
+  /*background: red;*/
 }
 #slide-2 .hsContent {
   /*margin-left: -450px;*/
@@ -316,8 +294,8 @@ header {
 
 /* ========================== Slide 3 =========================== */
 #slide-3 .wrapper {
-  /*background-image:url('../img/tiy2.jpg');*/
-  background: lightblue;
+  background-image:url('../img/tiy2.jpg');
+  /*background: lightblue;*/
 }
 #slide-3 .hsContent {
   /*margin-left: -239px;*/
@@ -339,8 +317,8 @@ header {
 
 /* ========================== Slide 4 =========================== */
 #slide-4 .wrapper {
-  /*background-image:url('../img/sunset-reduced.jpg');*/
-  background: pink;
+  background-image:url('../img/sunset-reduced.jpg');
+  /*background: pink;*/
 }
 #slide-4 .hsContent {
   /*margin-left: -450px;*/
