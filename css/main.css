@@ -1,3 +1,5 @@
+/*font-family: 'Raleway', sans-serif;
+*/
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -13,6 +15,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*
@@ -110,6 +113,12 @@ section {
 ul{
   padding: 0;
 }
+
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+
 .loaded section,
 .no-js section {
   opacity: 1;
@@ -170,31 +179,47 @@ main {
 .fa {
   font-size: 36px;
 }
-/* ========================== Nav bar =========================== */
+
+/* ========================== Header =========================== */
+
+header {
+  width: 100%;
+  height: 200px;
+}
 
 #fixedElement {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    /*margin-left: -100px;*/
-    background-color: rgba(34,34,34,0.8);
-    color: rgba(255,255,255, 1);
-    /*padding: 5px;*/
-    z-index: 3;
-    font-size: 11px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(34,34,34,0.5);
+  color: rgba(255,255,255, 1);
+  z-index: 3;
 }
 
 #fixedElement ul li {
-  /*display: inline;*/
-  text-align: left;
-  padding: 10px 0 10px 10px;
-  font-size: 1.5em;
+  padding: 5px 0 5px 5px;
+  font-size: 1.25em;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logoImg {
+    width: 100%;
+    height: 75px;
+}
+
+.logo .logoImg { 
+  background: url('../img/KT.png') no-repeat;
+  background-position: center center;
+  background-size: 60px auto;
 }
 
 ul.nav-bar li:hover { 
-  background: #555;  
+  background: rgba(7, 209, 209, .5);  
 }
 
 ul.nav-bar li:hover ul { 
@@ -202,64 +227,32 @@ ul.nav-bar li:hover ul {
 }
 
 .spacer {
-  height: 190px;
+  height: 200px;
   width: 100%;
 }
-
-.logo {
-  margin-left: 0;
-}
-  .logoImg {
-    width: 220px;
-    height: 130px;
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    /*margin-left: -90px;*/
-  }
-  .logo .logoImg { 
-    background: url('../img/KT.png') no-repeat top left;
-    background-size: 100px auto;
-    /*border: 1px solid blue;*/
-  }
-
-
 /* ========================== Slide 1 =========================== */
 
-#detroit .wrapper {
-  background-image:url('../img/rencen-reduced.jpg');
+#tiy .wrapper {
+  background-image:url('../img/tiy-reduced.jpg');
   /*background: tan;*/
 }
-#detroit .hsContent {
+
+#tiy .hsContent {
   background: rgba(34,34,34,0.8);
   left: 3%;
   top: 35%;
 }
-#detroit h2 {
+#tiy h2 {
   background: none;
   padding-left: 0;
   padding-right: 0;
   font-size: 2em;
 }
 
-  .headshotImg {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    margin-left: -75px
-  }
-  .headshot .headshotImg { 
-    background: url('../img/headshot.jpg') no-repeat top left;
-    background-size: 160px auto;
-    border-radius: 100%;
-  }
-
 /* ========================== Info Slide 1 =========================== */
 
 #infoSlide-1 .wrapper {
-  background: grey;
+  background-color: rgba(34,34,34,0.5);
 }
 #infoSlide-1 .hsContent {
   bottom: 200px;
@@ -269,7 +262,7 @@ ul.nav-bar li:hover ul {
 
 /* ========================== Slide 2 =========================== */
 #slide-2 .wrapper {
-  background-image:url('../img/fall-reduced.jpg');
+  background-image:url('../img/sunset-reduced.jpg');
   /*background: red;*/
 }
 #slide-2 .hsContent {
@@ -285,7 +278,7 @@ ul.nav-bar li:hover ul {
 /* ========================== Info Slide 2 =========================== */
 
 #infoSlide-2 .wrapper {
-  background: grey;
+  background-color: rgba(34,34,34,0.5);
 }
 #infoSlide-2 .hsContent {
   bottom: 200px;
@@ -294,7 +287,7 @@ ul.nav-bar li:hover ul {
 
 /* ========================== Slide 3 =========================== */
 #slide-3 .wrapper {
-  background-image:url('../img/tiy2.jpg');
+  background-image:url('../img/fall-reduced.jpg');
   /*background: lightblue;*/
 }
 #slide-3 .hsContent {
@@ -308,7 +301,7 @@ ul.nav-bar li:hover ul {
 /* ========================== Info Slide 3 =========================== */
 
 #infoSlide-3 .wrapper {
-  background: grey;
+  background-color: rgba(34,34,34,0.5);
 }
 #infoSlide-3 .hsContent {
   bottom: 200px;
@@ -317,7 +310,7 @@ ul.nav-bar li:hover ul {
 
 /* ========================== Slide 4 =========================== */
 #slide-4 .wrapper {
-  background-image:url('../img/sunset-reduced.jpg');
+  background-image:url('../img/rencen-reduced.jpg');
   /*background: pink;*/
 }
 #slide-4 .hsContent {
@@ -440,78 +433,11 @@ ul.nav-bar li:hover ul {
   *zoom: 1;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 440px) {
-/* ========================== Nav bar =========================== */
 
-#fixedElement {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    /*margin-left: -100px;*/
-    background-color: rgba(34,34,34,0.8);
-    color: rgba(255,255,255, 1);
-    /*padding: 5px;*/
-    z-index: 3;
-    font-size: 15px;
-}
-
-#fixedElement ul li {
-  display: inline;
-  padding: 0 10px 0 10px;
-}
 /* ========================== Header =========================== */
 
-header {
-    font-family: 'Lobster', cursive;
-    background: #fff;
-    background-size: auto 130px;
-    color: #fff;
-    text-align: center;
-    padding: 140px 0 40px 0;
-    position: relative;
-    z-index: 2;
-}
 
-.logo {
-  margin-left: 0;
-}
-  .logoImg {
-    width: 220px;
-    height: 130px;
-    position: absolute;
-    top: 50px;
-    left: 30%;
-    /*margin-left: -90px;*/
-  }
-  .logo .logoImg { 
-    background: url('../img/KTlogo-nobee.png') no-repeat top left;
-    background-size: 220px auto;
-    /*border: 1px solid blue;*/
-  }
-
-  .beelogoImg {
-    width: 60px;
-    height: 55px;
-    position: absolute;
-    top: 80px;
-    left: 68%;
-    /*margin-left: 85px;*/
-  }
-  
-  .logo .beelogoImg {
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 60px auto;
-    /*border: 1px solid red;*/
-  }
-}
 
 @media only screen and (min-width: 790px) {
     
