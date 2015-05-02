@@ -213,12 +213,12 @@ ul.nav-bar li:hover ul {
     width: 220px;
     height: 130px;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 55%;
     /*margin-left: -90px;*/
   }
   .logo .logoImg { 
-    background: url('../img/KT.svg') no-repeat top left;
+    background: url('../img/KT.png') no-repeat top left;
     background-size: 100px auto;
     /*border: 1px solid blue;*/
   }
