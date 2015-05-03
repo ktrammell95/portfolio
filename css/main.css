@@ -101,6 +101,13 @@ body {
 h2 {
   margin-top: 0;
 }
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 0 0.3em 0;
+  text-align: center;
+}
 
 .loading {
   background: url('../img/ico_loading.gif') no-repeat center center;
@@ -198,10 +205,37 @@ header {
   z-index: 3;
 }
 
+#fixedElement nav {}
+  @media only screen and (min-width : 768px) {
+/*    #fixedElement {
+      background-color: pink;
+    }*/
+
+    #fixedElement nav {
+      margin-top: 15px;
+    }
+  }
+
 #fixedElement ul li {
   padding: 5px 0 5px 5px;
   font-size: 1.25em;
 }
+
+  @media only screen and (min-width : 768px) {
+
+    #fixedElement ul li {
+      display: inline;
+      padding: 0 20px 0 20px;
+      font-size: 1.5em;
+    }
+
+    #fixedElement .link2{
+      padding-right: 100px;
+    }
+    #fixedElement .link3{
+      padding-left: 100px;
+    }
+  }
 
 .logo {
   width: 100%;
@@ -218,6 +252,19 @@ header {
   background-size: 60px auto;
 }
 
+  @media only screen and (min-width : 768px) {
+    .logoImg {
+      width: 100%;
+      height: 150px;
+    }
+    .logo .logoImg { 
+      /*background: url('../img/KTlogo-nobee.png') no-repeat;*/
+      background-position: center center;
+      background-size: 125px auto;
+    }
+
+  }
+
 ul.nav-bar li:hover { 
   background: rgba(7, 209, 209, .5);  
 }
@@ -232,22 +279,78 @@ ul.nav-bar li:hover ul {
 }
 /* ========================== Slide 1 =========================== */
 
+#tiy {
+  margin-top: 10px ;
+}
 #tiy .wrapper {
   background-image:url('../img/tiy-reduced.jpg');
-  /*background: tan;*/
 }
 
-#tiy .hsContent {
-  background: rgba(34,34,34,0.8);
-  left: 3%;
-  top: 35%;
+#tiy article.h3 {
+  text-shadow: 1px 1px 2px #009D92;
+  /*background: black;*/
 }
-#tiy h2 {
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 2em;
+
+#tiy article.project {
+  float: none;
+  margin: 5px auto;
+  padding: 2%;
+  width: 80%
 }
+
+#tiy article:hover {
+  opacity: 1;
+}
+
+#tiy article:nth-child(4n) {
+  clear: both;
+}
+  @media only screen and (min-width : 480px) {
+    #tiy article:nth-child(n) {
+      clear: both;
+    }
+  }
+
+
+#tiy article img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000;
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+#tiy article img:hover {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+  @media only screen and (min-width : 480px) {
+    #tiy article.project {
+      background-color: white;
+      float: left;
+      min-height: 250px;
+      margin: 1%;
+      opacity: 0.8;
+      padding: 2%;
+      width: 43%;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    #tiy article.project {
+      background-color: white;
+      float: left;
+      min-height: 250px;
+      margin: 1%;
+      opacity: 0.8;
+      padding: 2%;
+      width: 27.33%;
+    }
+  }
+
 
 /* ========================== Info Slide 1 =========================== */
 
