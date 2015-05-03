@@ -306,7 +306,7 @@ ul.nav-bar li:hover ul {
   clear: both;
 }
   @media only screen and (min-width : 480px) {
-    #tiy article:nth-child(n) {
+    #tiy article:nth-child(2n) {
       clear: both;
     }
   }
