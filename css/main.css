@@ -117,6 +117,7 @@ section {
   height:100%;
   opacity: 0;
 }
+
 ul{
   padding: 0;
 }
@@ -133,6 +134,7 @@ a{
   -moz-transition: opacity 300ms ease-out;
   transition: opacity 300ms ease-out;
 }
+
 main {
   overflow-x: hidden;
 }
@@ -193,6 +195,11 @@ header {
   width: 100%;
   height: 200px;
 }
+  @media only screen and (min-width : 768px) {
+    header {
+      height: 140px;
+    }
+  }
 
 #fixedElement {
   position: fixed;
@@ -200,10 +207,11 @@ header {
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: rgba(34,34,34,0.5);
+  background-color: rgba(34,34,34,1);
   color: rgba(255,255,255, 1);
   z-index: 3;
 }
+
 
 #fixedElement nav {}
   @media only screen and (min-width : 768px) {
@@ -212,7 +220,7 @@ header {
     }*/
 
     #fixedElement nav {
-      margin-top: 15px;
+      margin-top: -85px;
     }
   }
 
@@ -225,7 +233,7 @@ header {
 
     #fixedElement ul li {
       display: inline;
-      padding: 0 20px 0 20px;
+      padding: 0 0 0 20px;
       font-size: 1.5em;
     }
 
@@ -247,7 +255,7 @@ header {
 }
 
 .logo .logoImg { 
-  background: url('../img/KT.png') no-repeat;
+  background: url('../img/logos/KT.png') no-repeat;
   background-position: center center;
   background-size: 60px auto;
 }
@@ -258,7 +266,7 @@ header {
       height: 150px;
     }
     .logo .logoImg { 
-      /*background: url('../img/KTlogo-nobee.png') no-repeat;*/
+      /*background: url('../img/logos/KTlogo-nobee.png') no-repeat;*/
       background-position: center center;
       background-size: 125px auto;
     }
@@ -277,8 +285,14 @@ ul.nav-bar li:hover ul {
   height: 200px;
   width: 100%;
 }
+    @media only screen and (min-width : 768px) {
+      .spacer {
+        height: 130px;
+        width: 100%;
+      }
+    }
 /* ========================== Slide 1 =========================== */
-main { }
+
 
 #tiy {
   margin-top: 10px ;
@@ -290,8 +304,13 @@ main { }
 }
 
 #tiy .wrapper {
-  background-image:url('../img/tiy-reduced.jpg');
+  background-image:url('../img/backgrounds/tiy-reduced.jpg');
 }
+  @media only screen and (min-width: 768px) { 
+    #tiy .wrapper {
+    background-image:url('../img/backgrounds/tiy2.jpg')
+    }
+  }
 
 #tiy article.h3 {
   text-shadow: 1px 1px 2px #009D92;
@@ -315,6 +334,17 @@ main { }
       width: 35%;
     }
   }
+  @media only screen and (min-width : 768px) {
+    #tiy article.project {
+      /*background-color: white;*/
+      float: left;
+      min-height: 250px;
+      margin: 1%;
+      opacity: 0.8;
+      padding: 2%;
+      width: 27.33%;
+    }
+  }
 
 #tiy article:hover {
   opacity: 1;
@@ -328,17 +358,6 @@ main { }
   width: 100%;
 }
 
-  @media only screen and (min-width : 768px) {
-    #tiy article.project {
-      background-color: white;
-      float: left;
-      min-height: 250px;
-      margin: 1%;
-      opacity: 0.8;
-      padding: 2%;
-      width: 27.33%;
-    }
-  }
 
 
 /* ========================== Info Slide 1 =========================== */
@@ -354,9 +373,15 @@ main { }
 
 /* ========================== Slide 2 =========================== */
 #slide-2 .wrapper {
-  background-image:url('../img/sunset-reduced.jpg');
+  background-image:url('/img/backgrounds/sunset-reduced.jpg');
   /*background: red;*/
 }
+  @media only screen and (min-width: 768px) {
+    #slide-2 .wrapper {
+    background-image:url('../img/backgrounds/sunset.jpg');
+    }
+  }
+
 #slide-2 .hsContent {
   /*margin-left: -450px;*/
   bottom: 200px;
@@ -379,9 +404,15 @@ main { }
 
 /* ========================== Slide 3 =========================== */
 #slide-3 .wrapper {
-  background-image:url('../img/fall-reduced.jpg');
+  background-image:url('../img/backgrounds/fall-reduced.jpg');
   /*background: lightblue;*/
 }
+  @media only screen and (min-width: 768px) {
+    #slide-2 .wrapper {
+    background-image:url('../img/backgrounds/fall.jpg');
+    }
+  }
+
 #slide-3 .hsContent {
   /*margin-left: -239px;*/
 }
@@ -402,9 +433,15 @@ main { }
 
 /* ========================== Slide 4 =========================== */
 #slide-4 .wrapper {
-  background-image:url('../img/rencen-reduced.jpg');
+  background-image:url('../img/backgrounds/rencen-reduced.jpg');
   /*background: pink;*/
 }
+  @media only screen and (min-width: 790px) {
+    #slide-4 .wrapper {
+    background-image:url('../img/backgrounds/rencen.jpg');
+    }
+  }
+
 #slide-4 .hsContent {
   /*margin-left: -450px;*/
   background: grey;
@@ -529,20 +566,6 @@ main { }
 
 /* ========================== Header =========================== */
 
-
-
-@media only screen and (min-width: 790px) {
-    
-  #detroit .wrapper {
-  background-image:url('../img/rencen.jpg')
-  }
-  #slide-2 .wrapper {
-  background-image:url('../img/fall.jpg')
-  }
-  #slide-4 .wrapper {
-  background-image:url('../img/sunset2.jpg')
-  }
-}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

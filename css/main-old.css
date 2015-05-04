@@ -1,5 +1,8 @@
-/*font-family: 'Lobster', cursive;
-font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;
+*/
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
 html,
 button,
@@ -9,668 +12,614 @@ textarea {
     color: #222;
 }
 
-html {
+body {
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
 }
 
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
+
+/*
+ * A better looking default horizontal rule
+ */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+  vertical-align: middle;
 }
+
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-/* ============================================================== */
-html, body {
-    width:100%;
-    height:100%;
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-color: #000000;
 }
-
 body {
-    font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background-color: #128977;
+  font-size: 0.75em;
+}
+.no-js {
+  padding-top: 106px;
+}
+h2 {
+  margin-top: 0;
+}
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 0 0.3em 0;
+  text-align: center;
 }
 
+.loading {
+  background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+  min-width: 320px;
+  height:100%;
+  opacity: 0;
+}
+ul{
+  padding: 0;
+}
+
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+main {
+  overflow-x: hidden;
+}
+#preload {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1140px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
-/* ========================== General ========================== */
-
-.info {
-    display: none;
+.hsContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
-#fixedElement {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+.hsContent {
+  max-width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+  .hsContent h2  {
+    color: #fff8de;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 5px;
+    font-size: 35px;
+    line-height: 38px;
+    margin-bottom: 12px;
+  }
+  .hsContent p {
     width: 100%;
-    text-align: center;
-    /*margin-left: -100px;*/
-    background-color: rgba(34,34,34,0.8);
-    color: rgba(255,255,255, 1);
-    padding: 5px;
-    z-index: 3;
-    font-size: 12px;
-}
+    color: #b2b2b2;
+  }
+  .hsContent a {
+    color: #b2b2b2;
+    text-decoration: none;
+  }
 
-#fixedElement ul li {
-  display: inline;
-  padding: 5px;
+.fa {
+  font-size: 36px;
 }
 
 /* ========================== Header =========================== */
 
 header {
-    font-family: 'Lobster', cursive;
-    background: #fff;
-    background-size: auto 130px;
-    color: #fff;
-    text-align: center;
-    padding: 140px 0 40px 0;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  height: 200px;
 }
+
+#fixedElement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(34,34,34,0.5);
+  color: rgba(255,255,255, 1);
+  z-index: 3;
+}
+
+#fixedElement nav {}
+  @media only screen and (min-width : 768px) {
+/*    #fixedElement {
+      background-color: pink;
+    }*/
+
+    #fixedElement nav {
+      margin-top: 15px;
+    }
+  }
+
+#fixedElement ul li {
+  padding: 5px 0 5px 5px;
+  font-size: 1.25em;
+}
+
+  @media only screen and (min-width : 768px) {
+
+    #fixedElement ul li {
+      display: inline;
+      padding: 0 20px 0 20px;
+      font-size: 1.5em;
+    }
+
+    #fixedElement .link2{
+      padding-right: 100px;
+    }
+    #fixedElement .link3{
+      padding-left: 100px;
+    }
+  }
 
 .logo {
-  margin-left: 0;
-}
-  .logoImg {
-    width: 220px;
-    height: 130px;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    margin-left: -90px;
-  }
-  .logo .logoImg { 
-    background: url('../img/KTlogo-nobee.png') no-repeat top left;
-    background-size: 220px auto;
-    /*border: 1px solid blue;*/
-  }
-
-  .beelogoImg {
-    width: 60px;
-    height: 55px;
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    margin-left: 85px;
-  }
-  
-  .logo .beelogoImg {
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 60px auto;
-    /*border: 1px solid red;*/
-  }
-
-
-/* ========================== Intro =========================== */
-main { }
-
-  #intro {
-    /*background: url('../img/bcg_profiles.png') repeat-y top center;*/
-    /*background-attachment: fixed;*/
-    color: #fff;
-    background-size: auto 45px;
-    z-index: 2;
-  }
-
-  .intro-section{
-    width: 45%;
-    margin: 0 5%;
-    padding: 210px 0 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .bee {
-    margin-left: 0;
-  }
-
-  .intro-section h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-  }
-    .intro-section p {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-    }
-
-  .bee { 
-    float: left; 
-    margin-left: 0;
-  }
-
-  .headshot {
-    float: right; 
-    margin-right: 0;
-  }
-  
-  .beeImg{
-    width: 60px;
-    height: 55px;
-    position: absolute;
-    top: 30px;
-    left: 65%;
-  }
-
-  .headshotImg {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    margin-left: -75px
-  }
-
-  #intro:after {
-    display: block;
-    position: absolute;
-    top: 218px;
-    left: 50%;
-    width: 75px;
-    margin-left: -39px;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .bee .beeImg { 
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 60px auto;
-  }
-
-  .headshot .headshotImg { 
-    background: url('../img/headshot.jpg') no-repeat top left;
-    background-size: 160px auto;
-    border-radius: 100%;
-  }
-
-/* ========================== Detroit =========================== */
-
-  .detroit {
-    height: 325px;
-    clear: both;
-    background: url('../img/detroit_skyline2.jpg') no-repeat bottom center;
-    /*background-attachment: fixed;*/
-    color: #fff;
-    background-size: auto;
-    z-index: 2;
-  }
-
-/* ========================== Photography =========================== */
- #photos {
-  background: url('../img/bcg_profiles.png') repeat-y top center;
-  background-attachment: fixed;
-  color: #fff;
-  background-size: auto 45px;
-  z-index: 2;
+  width: 100%;
 }
 
-  .photography {
-    width: 45%;
-    margin: 0 5%;
-    padding: 210px 0 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .camera {
-    margin-left: 0;
-  }
-
-  .photography h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-    }
-    .photography p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
-  .camera { 
-    float: left; 
-    margin-left: 0;
-  }
-
-  .pictures {
-    float: right; 
-    margin-right: 0;
-  }
-  
-  .cameraImg {
-    width: 128px;
-    height: 141px;
-    position: absolute;
-    top: 30px;
-    /*left: 50%;*/
-    /*margin-left: -64px;*/
-  }
-
-   .slides {
-    width: 185px;
-    height: 198px;
-    position: absolute;
-    top: 30px;
-    margin-left: auto;
-    border: 1px solid red;
-  }
-
-  #photos:after {
-    display: block;
-    position: absolute;
-    top: 218px;
-    left: 50%;
-    width: 75px;
-    margin-left: -39px;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .camera .cameraImg { 
-    background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-/* ========================== States =========================== */
- #states {
-  background: url('../img/bcg_profiles.png') repeat-y top center;
-  background-attachment: fixed;
-  color: #fff;
-  background-size: auto 45px;
-  z-index: 2;
+.logoImg {
+    width: 100%;
+    height: 75px;
 }
 
-  .state {
-    width: 45%;
-    margin: 0 5%;
-    padding: 210px 0 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .michigan {
-    margin-left: 0;
-  }
-
-  .state h2 {
-        margin-top: 0;
-        font-size: 1.2em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .state p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
-  .michigan { 
-    float: left; 
-    margin-left: 0;
-  }
-
-  .florida {
-    float: right; 
-    margin-right: 0;
-  }
-  
-  .michiganImg, .floridaImg {
-    width: 128px;
-    height: 141px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -64px;
-  }
-
-  #states:after {
-    display: block;
-    position: absolute;
-    top: 218px;
-    left: 50%;
-    width: 75px;
-    margin-left: -39px;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .michigan .michiganImg { 
-    background: url('../img/michigan.png') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-  .florida .floridaImg { 
-    background: url('../img/florida.png') no-repeat top left;
-    background-size: 128px 141px;
-    border: 1px solid blue;
-  }
-
-  .move-info {
-    background: #222;
-  }
-
-/* ========================== Park =========================== */
-
-
-
-
-
-/* ========================== Footer =========================== */
-
-footer {
-  clear:both;
-  background-color: #ffffff;
-  text-align: center;
-  position: relative;
-  z-index: 2;
+.logo .logoImg { 
+  background: url('../img/KT.png') no-repeat;
+  background-position: center center;
+  background-size: 60px auto;
 }
 
-/* ========================== Media Queries =========================== */
-
-@media only screen and (min-width: 480px) {
-    /* =General */
-
-    /* =Header */
-
-    /* =Profiles */
-
-    /* =Boxing Ring */
-
-    /* =Footer */
-}
-
-@media only screen and (min-width: 768px) {
-  /* =General */
-  #fixedElement {
-      /*top: 30px;*/
-      padding: 10px;
-      /*margin-left: -110px;*/
-      font-size: 1em;
-  }
-  #fixedElement ul li {
-    padding: 40px;
-  }
-  /* =Header */
-  header {
-      padding: 200px 0 45px 0;
-  }
-
-  .logo {
-    margin-left: 0;
-  }
+  @media only screen and (min-width : 768px) {
     .logoImg {
-      width: 350px;
-      height: 200px;
-      position: absolute;
-      top: 55px;
-      left: 50%;
-      margin-left: -150px;
+      width: 100%;
+      height: 150px;
     }
     .logo .logoImg { 
-      background: url('../img/KTlogo-nobee.png') no-repeat top left;
-      background-size: 350px auto;
-      /*border: 1px solid blue;*/
+      /*background: url('../img/KTlogo-nobee.png') no-repeat;*/
+      background-position: center center;
+      background-size: 125px auto;
     }
 
-  .beelogoImg {
-    width: 100px;
-    height: 90px;
-    position: fixed;
-    top: 105px;
-    left: 50%;
-    margin-left: 120px;
   }
-  
-  .logo .beelogoImg {
-    background: url('../img/bee.png') no-repeat top left;
-    background-size: 100px auto;
-    /*border: 1px solid red;*/
-  }
-  /* Intro */
-    #intro {
-        background-size: auto auto;
-    }
-        #intro:after {
-            top: 170px;
-            width: 150px;
-            margin-left: -78px;
-            font-size: 3.75em;
-        }
-        .intro-section {
-            padding-top: 380px;
-        }
-        .intro-section h2 {
-            font-size: 2.5em;
-            line-height: 1.12em;
-            text-align: left;
-        }
-        .intro-section p {
-            font-family: 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-            font-weight: normal;
-        }
-        .beeImg{
-            width: 90px;
-            height: 85px;
-            position: absolute;
-            top: 30px;
-            left: 65%;
-          } 
 
-        .girlImg {
-          width: 276px;
-          height: 305px;
-          top: 60px;
-          margin-left: -138px;
-          background-size: 100% 100%;
-        }
-        .bee .beeImg,
-        .girl .girlImg {
-            background-size: 100% 100%;
-        }
-
-        .cameraImg {
-          width: 300px;
-          height: 250px;
-          position: absolute;
-          top: 30px;
-          /*left: 50%;*/
-          /*margin-left: -64px;*/
-        }
-
-        .camera .cameraImg { 
-          background: url('../img/11048-NMX0OA-01.svg') no-repeat top left;
-          background-size: 300px 250px;
-          border: 1px solid blue;
-        }
+ul.nav-bar li:hover { 
+  background: rgba(7, 209, 209, .5);  
 }
 
-@media only screen and (min-width: 1140px) {
-    /* =General */
+ul.nav-bar li:hover ul { 
+  display: block;  
+}
 
-    /* =Header */
+.spacer {
+  height: 200px;
+  width: 100%;
+}
+/* ========================== Slide 1 =========================== */
 
-    /* =Profiles */
 
-    /* =Boxing Ring */
+#tiy {
+  margin-top: 10px ;
+}
 
-    /* =Footer */
+#tiy h2 {
+  background: grey;
+  font-size: 2em;
+}
+
+#tiy .wrapper {
+  background-image:url('../img/tiy-reduced.jpg');
+}
+
+#tiy article.h3 {
+  text-shadow: 1px 1px 2px #009D92;
+  background: red;
+}
+
+#tiy article.project {
+  float: left;
+  margin: 5px auto;
+  padding: 0 2%;
+  width: 45%
+}
+  @media only screen and (min-width : 480px) {
+    #tiy article.project {
+      /*background-color: white;*/
+      float: left;
+      min-height: 220px;
+      margin: 1%;
+      opacity: 0.8;
+      padding: 2% 5%;
+      width: 35%;
+    }
+  }
+
+#tiy article:hover {
+  opacity: 1;
+}
+
+#tiy article img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000;
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+
+  @media only screen and (min-width : 768px) {
+    #tiy article.project {
+      background-color: white;
+      float: left;
+      min-height: 250px;
+      margin: 1%;
+      opacity: 0.8;
+      padding: 2%;
+      width: 27.33%;
+    }
+  }
+
+
+/* ========================== Info Slide 1 =========================== */
+
+#infoSlide-1 .wrapper {
+  background-color: rgba(34,34,34,0.5);
+}
+#infoSlide-1 .hsContent {
+  bottom: 200px;
+  top: auto;
+  
+}
+
+/* ========================== Slide 2 =========================== */
+#slide-2 .wrapper {
+  background-image:url('../img/sunset-reduced.jpg');
+  /*background: red;*/
+}
+#slide-2 .hsContent {
+  /*margin-left: -450px;*/
+  bottom: 200px;
+  top: auto;
+}
+#slide-2 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* ========================== Info Slide 2 =========================== */
+
+#infoSlide-2 .wrapper {
+  background-color: rgba(34,34,34,0.5);
+}
+#infoSlide-2 .hsContent {
+  bottom: 200px;
+  top: auto;
+}
+
+/* ========================== Slide 3 =========================== */
+#slide-3 .wrapper {
+  background-image:url('../img/fall-reduced.jpg');
+  /*background: lightblue;*/
+}
+#slide-3 .hsContent {
+  /*margin-left: -239px;*/
+}
+#slide-3 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* ========================== Info Slide 3 =========================== */
+
+#infoSlide-3 .wrapper {
+  background-color: rgba(34,34,34,0.5);
+}
+#infoSlide-3 .hsContent {
+  bottom: 200px;
+  top: auto;
+}
+
+/* ========================== Slide 4 =========================== */
+#slide-4 .wrapper {
+  background-image:url('../img/rencen-reduced.jpg');
+  /*background: pink;*/
+}
+#slide-4 .hsContent {
+  /*margin-left: -450px;*/
+  background: grey;
+  /*left: 10%;*/
+}
+
+#slide-4 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#slide-4 ul li {
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+  color: #fff8de;
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Image replacement
+ */
+
 .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
 }
 
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
 }
 
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
-/* ================ Print styles ============================ */
+
+
+/* ========================== Header =========================== */
+
+
+
+@media only screen and (min-width: 790px) {
+    
+  #detroit .wrapper {
+  background-image:url('../img/rencen.jpg')
+  }
+  #slide-2 .wrapper {
+  background-image:url('../img/fall.jpg')
+  }
+  #slide-4 .wrapper {
+  background-image:url('../img/sunset2.jpg')
+  }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
 
 @media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
 
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
 
-  thead {
-    display: table-header-group;
-  }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
 
-  img {
-    max-width: 100% !important;
-  }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  @page {
-    margin: 0.5cm;
-  }
+    img {
+        max-width: 100% !important;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    @page {
+        margin: 0.5cm;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
-
