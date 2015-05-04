@@ -100,10 +100,11 @@ body {
 }
 h2 {
   margin-top: 0;
+  font-size: 2.5em;
 }
 h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.4em;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-size: 2em;
   font-weight: 700;
   margin: 0 0 0.3em 0;
   text-align: center;
@@ -172,7 +173,7 @@ main {
     color: #fff8de;
     background-color: rgba(0,0,0,0.5);
     padding: 10px 5px;
-    font-size: 35px;
+    /*font-size: 35px;*/
     line-height: 38px;
     margin-bottom: 12px;
   }
@@ -188,7 +189,7 @@ main {
   }
 
 .fa {
-  font-size: 36px;
+  font-size: 2em;
 }
 
 /* ========================== Header =========================== */
@@ -298,13 +299,17 @@ header {
 }
 
 #intro .contact {
-  background: #FFF;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 2%;
   margin: 5%;
+}
+
+.contact ul {
+  padding: 10px 40px 0;
 }
 
 .contact ul li {
   display: inline;
-  background: #FFF;
   width: 90%;
   padding: 0 5px;
 }
@@ -379,18 +384,6 @@ header {
 }
 
 
-
-/* ========================== Info Slide 1 =========================== */
-
-#infoSlide-2 .wrapper {
-  background-color: rgba(34,34,34,0.5);
-}
-#infoSlide-2 .hsContent {
-  bottom: 200px;
-  top: auto;
-  
-}
-
 /* ========================== Slide 2 =========================== */
 #slide-2 .wrapper {
   background-image:url('/img/backgrounds/sunset-reduced.jpg');
@@ -404,8 +397,9 @@ header {
 
 #slide-2 .hsContent {
   /*margin-left: -450px;*/
-  bottom: 200px;
-  top: auto;
+  /*bottom: 200px;*/
+  top: 0;
+  margin: 5%;
 }
 #slide-2 h2 {
   background: none;
@@ -417,9 +411,12 @@ header {
 #infoSlide-2 .wrapper {
   background-color: rgba(34,34,34,0.5);
 }
+
 #infoSlide-2 .hsContent {
-  bottom: 200px;
-  top: auto;
+  /*margin-left: -450px;*/
+  /*bottom: 200px;*/
+  top: 0;
+  margin: 5%;
 }
 
 /* ========================== Slide 3 =========================== */
@@ -434,8 +431,12 @@ header {
   }
 
 #slide-3 .hsContent {
-  /*margin-left: -239px;*/
+  /*margin-left: -450px;*/
+  /*bottom: 200px;*/
+  top: 0;
+  margin: 5%;
 }
+
 #slide-3 h2 {
   background: none;
   padding-left: 0;
@@ -446,9 +447,17 @@ header {
 #infoSlide-3 .wrapper {
   background-color: rgba(34,34,34,0.5);
 }
+
 #infoSlide-3 .hsContent {
-  bottom: 200px;
-  top: auto;
+  /*margin-left: -450px;*/
+  /*bottom: 200px;*/
+  top: 0;
+  margin: 5%;
+  color: #FFF;
+}
+
+#infoSlide-3 ul li {
+  padding: 5px 0;
 }
 
 /* ========================== Slide 4 =========================== */
@@ -464,8 +473,16 @@ header {
 
 #slide-4 .hsContent {
   /*margin-left: -450px;*/
-  background: grey;
-  /*left: 10%;*/
+  /*bottom: 200px;*/
+  top: 0;
+  margin: 5%;
+  position: relative;
+}
+
+#slide-4 .photography {
+  background: #FFF;
+  width: 100px;
+  height: 100px;
 }
 
 #slide-4 h2 {
