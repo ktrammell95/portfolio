@@ -179,7 +179,8 @@ main {
   .hsContent p {
     width: 95%;
     color: white;
-    background: rgba(134, 131, 131, .5)
+    background: rgba(134, 131, 131, .5);
+    font-size: 1.5em;
   }
   .hsContent a {
     color: #b2b2b2;
