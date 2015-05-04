@@ -165,7 +165,7 @@ main {
 .hsContent {
   max-width: 90%;
   position: absolute;
-  left: 5%;
+  /*left: 5%;*/
   top: 50%;
 }
   .hsContent h2  {
@@ -177,8 +177,9 @@ main {
     margin-bottom: 12px;
   }
   .hsContent p {
-    width: 100%;
-    color: #b2b2b2;
+    width: 95%;
+    color: white;
+    background: rgba(134, 131, 131, .5)
   }
   .hsContent a {
     color: #b2b2b2;
@@ -215,10 +216,6 @@ header {
 
 #fixedElement nav {}
   @media only screen and (min-width : 768px) {
-/*    #fixedElement {
-      background-color: pink;
-    }*/
-
     #fixedElement nav {
       margin-top: -85px;
     }
@@ -230,13 +227,11 @@ header {
 }
 
   @media only screen and (min-width : 768px) {
-
     #fixedElement ul li {
       display: inline;
       padding: 0 0 0 20px;
       font-size: 1.5em;
     }
-
     #fixedElement .link2{
       padding-right: 100px;
     }
@@ -286,40 +281,69 @@ header {
         width: 100%;
       }
     }
-/* ========================== Slide 1 =========================== */
 
-
-#tiy {
-  margin-top: 10px ;
+/* ========================== TIY Projects =========================== */
+#intro {
+  /*height: 320px;*/
 }
 
-#tiy h2 {
-  background: grey;
-  font-size: 2em;
-}
-
-#tiy .wrapper {
+#intro .wrapper {
   background-image:url('../img/backgrounds/tiy-reduced.jpg');
 }
+#intro .hsContent {
+  position: relative;
+  top: auto;
+  margin: 5%;
+}
+
+#intro .contact {
+  background: #FFF;
+  margin: 5%;
+}
+
+.contact ul li {
+  display: inline;
+  background: #FFF;
+  width: 90%;
+  padding: 0 5px;
+}
+
+/* ========================== TIY Projects =========================== */
+
+
+#infoSlide-1 {
+  /*margin-top: 10px ;*/
+}
+
+#infoSlide-1 h2 {
+  background: rgba(128, 128, 128,.5);
+  font-size: 2em;
+  color: white;
+}
+
+#infoSlide-1 .wrapper {
+    background-color: rgba(7, 209, 209,0.5);
+  /*background-image:url('../img/backgrounds/tiy-reduced.jpg');*/
+}
   @media only screen and (min-width: 768px) { 
-    #tiy .wrapper {
-    background-image:url('../img/backgrounds/tiy2.jpg')
+    #infoSlide-1 .wrapper {
+    /*background-image:url('../img/backgrounds/tiy2.jpg')*/
     }
   }
 
-#tiy article.h3 {
+#infoSlide-1 article.h3 {
   text-shadow: 1px 1px 2px #009D92;
   background: red;
 }
 
-#tiy article.project {
+#infoSlide-1 article.project {
   float: left;
   margin: 5px auto;
   padding: 0 2%;
   width: 45%
 }
   @media only screen and (min-width : 480px) {
-    #tiy article.project {
+    #infoSlide-1 article.project {
       /*background-color: white;*/
       float: left;
       min-height: 220px;
@@ -330,7 +354,7 @@ header {
     }
   }
   @media only screen and (min-width : 768px) {
-    #tiy article.project {
+    #infoSlide-1 article.project {
       /*background-color: white;*/
       float: left;
       min-height: 250px;
@@ -341,11 +365,11 @@ header {
     }
   }
 
-#tiy article:hover {
+#infoSlide-1 article:hover {
   opacity: 1;
 }
 
-#tiy article img {
+#infoSlide-1 article img {
   border-radius: 50%;
   box-shadow: 0px 0px 5px #000;
   display: block;
@@ -357,10 +381,10 @@ header {
 
 /* ========================== Info Slide 1 =========================== */
 
-#infoSlide-1 .wrapper {
+#infoSlide-2 .wrapper {
   background-color: rgba(34,34,34,0.5);
 }
-#infoSlide-1 .hsContent {
+#infoSlide-2 .hsContent {
   bottom: 200px;
   top: auto;
   
