@@ -270,15 +270,10 @@ header {
       background-position: center center;
       background-size: 125px auto;
     }
-
   }
 
-ul.nav-bar li:hover { 
-  background: rgba(7, 209, 209, .5);  
-}
-
-ul.nav-bar li:hover ul { 
-  display: block;  
+.nav-bar a:hover { 
+  color: rgb(7, 209, 209);  
 }
 
 .spacer {
