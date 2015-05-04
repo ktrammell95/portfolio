@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Project Page
+   ========================================================================== */
+
+#breweryBee .wrapper {
+  background-image:url('../img/backgrounds/sunset-reduced.jpg');
+}
+  @media only screen and (min-width: 768px) { 
+    #breweryBee .wrapper {
+    background-image:url('../img/backgrounds/sunset.jpg')
+    }
+  }
+}

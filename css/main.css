@@ -103,7 +103,6 @@ h2 {
   font-size: 2.5em;
 }
 h3 {
-  /*font-family: 'Quicksand', sans-serif;*/
   font-size: 1.4em;
   font-weight: 700;
   margin: 0 0 0.3em 0;
@@ -292,6 +291,12 @@ header {
 #intro .wrapper {
   background-image:url('../img/backgrounds/tiy-reduced.jpg');
 }
+  @media only screen and (min-width: 768px) { 
+    #intro .wrapper {
+    background-image:url('../img/backgrounds/tiy2.jpg')
+    }
+  }
+
 #intro .hsContent {
   position: relative;
   top: auto;
@@ -328,14 +333,9 @@ header {
 }
 
 #infoSlide-1 .wrapper {
-    background-color: rgba(7, 209, 209,0.5);
-  /*background-image:url('../img/backgrounds/tiy-reduced.jpg');*/
+  background-color: rgba(7, 209, 209,0.5);
 }
-  @media only screen and (min-width: 768px) { 
-    #infoSlide-1 .wrapper {
-    /*background-image:url('../img/backgrounds/tiy2.jpg')*/
-    }
-  }
+
 
 #infoSlide-1 article.h3 {
   text-shadow: 1px 1px 2px #009D92;
@@ -350,7 +350,6 @@ header {
 }
   @media only screen and (min-width : 480px) {
     #infoSlide-1 article.project {
-      /*background-color: white;*/
       float: left;
       min-height: 220px;
       margin: 1%;
@@ -361,7 +360,6 @@ header {
   }
   @media only screen and (min-width : 768px) {
     #infoSlide-1 article.project {
-      /*background-color: white;*/
       float: left;
       min-height: 250px;
       margin: 1%;
@@ -497,6 +495,48 @@ header {
   list-style: none;
   color: #fff8de;
 }
+
+/* ==========================================================================
+   Project Page
+   ========================================================================== */
+
+#breweryBee .wrapper {
+  background-image:url('../img/backgrounds/brewerybee_background.png');
+}
+ /* @media only screen and (min-width: 768px) { 
+    #breweryBee .wrapper {
+    background-image:url('../img/backgrounds/sunset.jpg')
+    }
+  }*/
+#breweryBee h2 {
+  background: grey;
+}
+
+#breweryBee img {
+  border-radius: 100%;
+}
+
+.project {
+  background: rgba(255, 255, 255, .5);
+}
+
+/* ========================== Footer =========================== */
+
+footer {
+  clear:both;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+footer ul li {
+  display: inline;
+  width: 90%;
+  padding: 0 5px;
+}
+
+
 
 /* ==========================================================================
    Helper classes
